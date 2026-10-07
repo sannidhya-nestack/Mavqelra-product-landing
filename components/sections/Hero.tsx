@@ -6,8 +6,8 @@ import { PRODUCT } from "@/lib/product";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative isolate overflow-hidden border-b border-[var(--line)] bg-[var(--paper)]">
-      {/* Hero Background: E-commerce operations team with orders & parcels */}
+    <section id="top" className="relative isolate overflow-hidden border-b border-slate-800 bg-[#070b14] text-white">
+      {/* Hero Background: Clearly visible e-commerce operations team with parcel shipments */}
       <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none select-none">
         <Image
           src="/assets/hero-ecommerce-ops.jpg"
@@ -15,35 +15,35 @@ export default function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center opacity-25 sm:opacity-30"
+          className="object-cover object-center brightness-[0.78] contrast-[1.12] opacity-75"
         />
-        {/* Soft overlay ensuring high-contrast readability across all devices */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/75 via-white/88 to-[var(--paper)]" />
+        {/* Dark gradient overlay for rich contrast and crisp typography */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#070b14]/75 via-[#070b14]/60 to-[#070b14]" />
       </div>
 
-      {/* Decorative background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-blue-500/15 via-sky-400/8 to-transparent blur-3xl pointer-events-none -z-10" />
+      {/* Ambient background glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[520px] bg-gradient-to-b from-blue-600/25 via-sky-500/10 to-transparent blur-3xl pointer-events-none -z-10" />
 
       <div className="mx-auto max-w-[1320px] px-5 pt-16 pb-20 sm:px-8 sm:pt-24 sm:pb-28 relative">
         <div className="flex flex-col items-center text-center max-w-[920px] mx-auto">
           {/* Eyebrow badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-600/20 bg-blue-50/80 px-3.5 py-1.5 text-[12.5px] font-semibold text-blue-700 backdrop-blur-sm">
-            <Sparkles className="h-3.5 w-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-950/70 px-3.5 py-1.5 text-[12.5px] font-semibold text-blue-300 backdrop-blur-md">
+            <Sparkles className="h-3.5 w-3.5 text-blue-400" />
             <span>Retail &amp; E-Commerce Operations OS</span>
-            <span className="h-1 w-1 rounded-full bg-blue-600" />
-            <span className="text-blue-900 font-bold">Closed-Loop Intelligence</span>
+            <span className="h-1 w-1 rounded-full bg-blue-400" />
+            <span className="text-white font-bold">Closed-Loop Intelligence</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="h-hero mt-6 text-[clamp(2.4rem,5.2vw,4.4rem)] font-extrabold tracking-[-0.03em] text-[var(--ink)] leading-[1.08]">
+          <h1 className="h-hero mt-6 text-[clamp(2.4rem,5.2vw,4.4rem)] font-extrabold tracking-[-0.03em] text-white leading-[1.08]">
             E-Commerce Is Not a Storefront. <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-600 to-sky-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-blue-200">
               It&apos;s a Continuous Operational System.
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-6 max-w-[760px] text-[17px] sm:text-[19px] leading-[1.6] text-[var(--ink-soft)]">
+          <p className="mt-6 max-w-[760px] text-[17px] sm:text-[19px] leading-[1.6] text-slate-200/90">
             {PRODUCT.name} unites supplier intake, catalog enrichment, inventory positioning, order routing, warehouse fulfillment, returns disposition, and customer support triage into one unified autonomous operations platform.
           </p>
 
@@ -51,38 +51,38 @@ export default function Hero() {
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#walkthrough"
-              className="inline-flex h-12 items-center justify-center rounded-xl bg-blue-600 px-7 text-[15px] font-semibold text-white shadow-md shadow-blue-600/20 transition hover:bg-blue-700 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              className="inline-flex h-12 items-center justify-center rounded-xl bg-blue-600 px-7 text-[15px] font-semibold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-500 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
             >
-              Schedule Live Walkthrough <ArrowUpRight className="ml-1.5 h-4 w-4" />
+              Book Demo <ArrowUpRight className="ml-1.5 h-4 w-4" />
             </a>
             <a
               href="#platform"
-              className="inline-flex h-12 items-center justify-center rounded-xl border border-[var(--line-2)] bg-white px-6 text-[15px] font-semibold text-[var(--ink)] shadow-xs transition hover:bg-black/[0.02]"
+              className="inline-flex h-12 items-center justify-center rounded-xl border border-white/20 bg-white/10 px-6 text-[15px] font-semibold text-white shadow-xs backdrop-blur-sm transition hover:bg-white/15"
             >
               Explore Command Center ↓
             </a>
           </div>
 
           {/* Micro Trust Proofs */}
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-[13px] text-[var(--ink-mute)]">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-[13px] text-slate-300">
             <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+              <CheckCircle2 className="h-4 w-4 text-emerald-400" />
               <span>PCI DSS v4.0.1 Ready</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+              <CheckCircle2 className="h-4 w-4 text-emerald-400" />
               <span>FTC 30-Day Delay Guardrails</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+              <CheckCircle2 className="h-4 w-4 text-emerald-400" />
               <span>Shopify Plus &amp; ERP Connectors</span>
             </div>
           </div>
         </div>
 
         {/* Operational Flow Strip */}
-        <div className="mt-16 rounded-2xl border border-[var(--line)] bg-white/80 p-5 shadow-xs backdrop-blur-xs">
-          <div className="text-center text-[12px] font-semibold uppercase tracking-wider text-[var(--ink-mute)] mb-4">
+        <div className="mt-16 rounded-2xl border border-white/15 bg-slate-900/80 p-5 shadow-2xl backdrop-blur-md">
+          <div className="text-center text-[12px] font-semibold uppercase tracking-wider text-slate-400 mb-4">
             The Closed-Loop E-Commerce Operating Cycle
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5 text-center">
@@ -98,11 +98,11 @@ export default function Hero() {
             ].map((s) => (
               <div
                 key={s.step}
-                className="flex flex-col items-center rounded-xl border border-black/[0.04] bg-black/[0.015] p-3 transition hover:border-blue-500/30 hover:bg-blue-50/30"
+                className="flex flex-col items-center rounded-xl border border-white/10 bg-white/[0.04] p-3 transition hover:border-blue-400/40 hover:bg-white/[0.08]"
               >
-                <span className="text-[10px] font-bold text-blue-600">{s.step}</span>
-                <span className="text-[13px] font-semibold text-[var(--ink)] mt-0.5">{s.label}</span>
-                <span className="text-[11px] text-[var(--ink-mute)]">{s.desc}</span>
+                <span className="text-[10px] font-bold text-blue-400">{s.step}</span>
+                <span className="text-[13px] font-semibold text-white mt-0.5">{s.label}</span>
+                <span className="text-[11px] text-slate-300">{s.desc}</span>
               </div>
             ))}
           </div>

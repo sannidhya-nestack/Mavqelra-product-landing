@@ -75,7 +75,7 @@ export default function Nav() {
               href="#walkthrough"
               className="inline-flex h-9 items-center justify-center rounded-lg bg-blue-600 px-4 text-[13.5px] font-semibold text-white shadow-sm transition hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             >
-              Book Walkthrough ↗
+              Book Demo ↗
             </a>
           </div>
 
@@ -111,7 +111,7 @@ export default function Nav() {
               onClick={() => setIsOpen(false)}
               className="flex h-11 w-full items-center justify-center rounded-lg bg-blue-600 font-semibold text-white"
             >
-              Book Walkthrough ↗
+              Book Demo ↗
             </a>
           </div>
         </div>
