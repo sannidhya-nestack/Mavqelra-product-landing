@@ -8,24 +8,14 @@ export default function Modules() {
   return (
     <section id="modules" className="border-b border-[var(--line)] bg-[var(--paper)]">
       <div className="mx-auto max-w-[1320px] px-5 py-20 sm:px-8 sm:py-28">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-          <div className="max-w-[56ch]">
-            <span className="eyebrow">The 8 Core Operational Modules</span>
-            <h2 className="h-section mt-5 text-[clamp(1.9rem,3.6vw,3rem)] text-[var(--ink)]">
-              Purpose-built for every phase of modern commerce execution.
-            </h2>
-            <p className="mt-6 text-[16px] leading-[1.6] text-[var(--ink-soft)]">
-              From automated supplier intake and demand elasticity to multi-node fulfillment routing, condition-based returns, and AI support triage, {PRODUCT.name} establishes a unified operational rhythm across all business units.
-            </p>
-          </div>
-
-          {/* Dots control on mobile/tablet */}
-          <div className="lg:hidden flex flex-col items-start sm:items-end gap-2 shrink-0">
-            <span className="text-[12px] font-medium text-[var(--ink-mute)]">
-              Swipe or tap dots to browse
-            </span>
-            <SliderDots targetId="modules-main" count={MODULES.length} size="lg" />
-          </div>
+        <div className="max-w-[56ch]">
+          <span className="eyebrow">The 8 Core Operational Modules</span>
+          <h2 className="h-section mt-5 text-[clamp(1.9rem,3.6vw,3rem)] text-[var(--ink)]">
+            Purpose-built for every phase of modern commerce execution.
+          </h2>
+          <p className="mt-6 text-[16px] leading-[1.6] text-[var(--ink-soft)]">
+            From automated supplier intake and demand elasticity to multi-node fulfillment routing, condition-based returns, and AI support triage, {PRODUCT.name} establishes a unified operational rhythm across all business units.
+          </p>
         </div>
 
         {/* Main Modules Stack */}

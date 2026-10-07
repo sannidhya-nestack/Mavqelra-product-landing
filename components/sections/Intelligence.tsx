@@ -60,17 +60,6 @@ export default function Intelligence() {
               We don&apos;t sell disconnected AI chatbots. {PRODUCT.name} embeds machine intelligence directly inside the core operational workflows — converting commercial signals into high-margin operational execution.
             </p>
           </div>
-          <div className="rounded-xl border border-blue-600/20 bg-blue-50/60 p-4 shrink-0 text-left">
-            <div className="text-[11px] font-bold uppercase tracking-wider text-blue-700">
-              Commercial Pitch Evidence
-            </div>
-            <div className="text-[22px] font-extrabold text-blue-950 mt-0.5">
-              2,450+ Company Signals
-            </div>
-            <div className="text-[12px] text-blue-800/80">
-              Validated Across Enterprise Operations
-            </div>
-          </div>
         </div>
 
         {/* AI Grid */}
