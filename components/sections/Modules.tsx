@@ -8,20 +8,28 @@ export default function Modules() {
   return (
     <section id="modules" className="border-b border-[var(--line)] bg-[var(--paper)]">
       <div className="mx-auto max-w-[1320px] px-5 py-20 sm:px-8 sm:py-28">
-        <div className="max-w-[56ch]">
-          <span className="eyebrow">The 8 Core Operational Modules</span>
-          <h2 className="h-section mt-5 text-[clamp(1.9rem,3.6vw,3rem)] text-[var(--ink)]">
-            Purpose-built for every phase of modern commerce execution.
-          </h2>
-          <p className="mt-6 text-[16px] leading-[1.6] text-[var(--ink-soft)]">
-            From automated supplier intake and demand elasticity to multi-node fulfillment routing, condition-based returns, and AI support triage, {PRODUCT.name} establishes a unified operational rhythm across all business units.
-          </p>
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+          <div className="max-w-[56ch]">
+            <span className="eyebrow">The 8 Core Operational Modules</span>
+            <h2 className="h-section mt-5 text-[clamp(1.9rem,3.6vw,3rem)] text-[var(--ink)]">
+              Purpose-built for every phase of modern commerce execution.
+            </h2>
+            <p className="mt-6 text-[16px] leading-[1.6] text-[var(--ink-soft)]">
+              From automated supplier intake and demand elasticity to multi-node fulfillment routing, condition-based returns, and AI support triage, {PRODUCT.name} establishes a unified operational rhythm across all business units.
+            </p>
+          </div>
+
+          {/* Dots control on mobile/tablet */}
+          <div className="lg:hidden flex flex-col items-start sm:items-end gap-2 shrink-0">
+            <span className="text-[12px] font-medium text-[var(--ink-mute)]">
+              Swipe or tap dots to browse
+            </span>
+            <SliderDots targetId="modules-main" count={MODULES.length} size="lg" />
+          </div>
         </div>
 
-        <SliderDots targetId="modules-main" count={MODULES.length} size="lg" />
-
         {/* Main Modules Stack */}
-        <div id="modules-main" className="slider-lg mt-16 gap-6 space-y-16 sm:space-y-24">
+        <div id="modules-main" className="slider-lg mt-10 lg:mt-16 gap-6 space-y-0 lg:space-y-24">
           {MODULES.map((m, i) => {
             const isEven = i % 2 === 1;
             return (
@@ -93,6 +101,14 @@ export default function Modules() {
               </article>
             );
           })}
+        </div>
+
+        {/* Bottom dots for mobile view */}
+        <div className="lg:hidden mt-8 flex flex-col items-center gap-2">
+          <SliderDots targetId="modules-main" count={MODULES.length} size="lg" />
+          <span className="text-[11.5px] text-[var(--ink-mute)]">
+            Tap dot to view module
+          </span>
         </div>
       </div>
     </section>
