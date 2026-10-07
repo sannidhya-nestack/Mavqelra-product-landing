@@ -77,7 +77,7 @@ export default function Platform() {
           {/* KPI 1 */}
           <div>
             <div className="text-[36px] sm:text-[42px] font-extrabold tracking-tight text-[#00e5ff] leading-none">
-              9.8 / 10
+              9.6 / 10
             </div>
             <h4 className="mt-3.5 text-[15px] sm:text-[16px] font-bold tracking-[-0.01em] text-white">
               AI Confidence Score
@@ -90,7 +90,7 @@ export default function Platform() {
           {/* KPI 2 */}
           <div>
             <div className="text-[36px] sm:text-[42px] font-extrabold tracking-tight text-[#00e5ff] leading-none">
-              38.5h
+              32.5h
             </div>
             <h4 className="mt-3.5 text-[15px] sm:text-[16px] font-bold tracking-[-0.01em] text-white">
               Operator Time Saved
@@ -103,7 +103,7 @@ export default function Platform() {
           {/* KPI 3 */}
           <div>
             <div className="text-[36px] sm:text-[42px] font-extrabold tracking-tight text-[#00e5ff] leading-none">
-              5.2x
+              4.5x
             </div>
             <h4 className="mt-3.5 text-[15px] sm:text-[16px] font-bold tracking-[-0.01em] text-white">
               Workflow Efficiency Gain
@@ -116,7 +116,7 @@ export default function Platform() {
           {/* KPI 4 */}
           <div>
             <div className="text-[36px] sm:text-[42px] font-extrabold tracking-tight text-[#00e5ff] leading-none">
-              3.6x
+              2.8x
             </div>
             <h4 className="mt-3.5 text-[15px] sm:text-[16px] font-bold tracking-[-0.01em] text-white">
               Order Fulfillment Capacity
