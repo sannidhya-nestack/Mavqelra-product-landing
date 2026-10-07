@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowUpRight, CheckCircle2, Sparkles, TrendingUp, ShieldCheck, Zap } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Sparkles } from "lucide-react";
 import { PRODUCT } from "@/lib/product";
 
 export default function Hero() {
@@ -77,34 +77,6 @@ export default function Hero() {
               <CheckCircle2 className="h-4 w-4 text-emerald-400" />
               <span>Shopify Plus &amp; ERP Connectors</span>
             </div>
-          </div>
-        </div>
-
-        {/* Operational Flow Strip */}
-        <div className="mt-16 rounded-2xl border border-white/15 bg-slate-900/80 p-5 shadow-2xl backdrop-blur-md">
-          <div className="text-center text-[12px] font-semibold uppercase tracking-wider text-slate-400 mb-4">
-            The Closed-Loop E-Commerce Operating Cycle
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5 text-center">
-            {[
-              { step: "01", label: "Product Intake", desc: "OCR & Feeds" },
-              { step: "02", label: "Catalog Ready", desc: "Taxonomy & Copy" },
-              { step: "03", label: "Merchandising", desc: "Elasticity & Offers" },
-              { step: "04", label: "Inventory ATP", desc: "Multi-Node Balance" },
-              { step: "05", label: "Order Acceptance", desc: "Fraud & Reservation" },
-              { step: "06", label: "Fulfillment", desc: "Wave & Routing" },
-              { step: "07", label: "Returns Flow", desc: "Grade & Restock" },
-              { step: "08", label: "Service Triage", desc: "1-Click Resolution" },
-            ].map((s) => (
-              <div
-                key={s.step}
-                className="flex flex-col items-center rounded-xl border border-white/10 bg-white/[0.04] p-3 transition hover:border-blue-400/40 hover:bg-white/[0.08]"
-              >
-                <span className="text-[10px] font-bold text-blue-400">{s.step}</span>
-                <span className="text-[13px] font-semibold text-white mt-0.5">{s.label}</span>
-                <span className="text-[11px] text-slate-300">{s.desc}</span>
-              </div>
-            ))}
           </div>
         </div>
       </div>
