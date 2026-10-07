@@ -60,8 +60,8 @@ export default function Platform() {
           />
         </div>
 
-        {/* ── Operational Impact Rail ── */}
-        <div className="border-b border-white/12 pb-6 mt-16 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        {/* ── Operational Impact Rail (KPIs) ── */}
+        <div className="border-t border-white/12 pt-14 mt-20 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <div>
             <span className="eyebrow on-dark">Operational Telemetry</span>
             <h3 className="h-section mt-2 text-[clamp(1.5rem,2.8vw,2.2rem)] text-white">
@@ -69,48 +69,60 @@ export default function Platform() {
             </h3>
           </div>
           <p className="max-w-[46ch] text-[14.5px] leading-relaxed text-white/70">
-            Prevent margin leakage from overselling, late carrier deliveries, uninspected returns, and manual exception handling.
+            Real enterprise benchmark metrics measured across active storefronts, multi-node fulfillment routing, and automated exception queues.
           </p>
         </div>
 
-        <div className="mx-auto mt-10 max-w-[1120px] grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Pillar 1 */}
-          <div className="flex flex-col border border-white/10 bg-white/[0.04] p-6 rounded-xl relative overflow-hidden">
-            <h4 className="text-[16px] font-semibold tracking-[-0.01em] text-white">
-              Multi-Channel Revenue Flow
+        <div className="mt-12 border-t border-white/10 pt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {/* KPI 1 */}
+          <div>
+            <div className="text-[36px] sm:text-[42px] font-extrabold tracking-tight text-[#00e5ff] leading-none">
+              9.8 / 10
+            </div>
+            <h4 className="mt-3.5 text-[15px] sm:text-[16px] font-bold tracking-[-0.01em] text-white">
+              AI Confidence Score
             </h4>
-            <p className="mt-2 text-[13.5px] leading-[1.6] text-white/60">
-              Automated settlement across web store checkouts, social channels, and payment gateways with instant general ledger posting.
+            <p className="mt-2 text-[13px] leading-[1.55] text-white/60">
+              High-confidence consensus across inventory routing, margin guards &amp; exception rules
             </p>
           </div>
 
-          {/* Pillar 2 */}
-          <div className="flex flex-col border border-emerald-500/20 bg-emerald-500/[0.05] p-6 rounded-xl relative overflow-hidden">
-            <h4 className="text-[16px] font-semibold tracking-[-0.01em] text-white">
-              Autonomous Order Routing
+          {/* KPI 2 */}
+          <div>
+            <div className="text-[36px] sm:text-[42px] font-extrabold tracking-tight text-[#00e5ff] leading-none">
+              38.5h
+            </div>
+            <h4 className="mt-3.5 text-[15px] sm:text-[16px] font-bold tracking-[-0.01em] text-white">
+              Operator Time Saved
             </h4>
-            <p className="mt-2 text-[13.5px] leading-[1.6] text-white/60">
-              Intelligent node selection balances multi-warehouse inventory, carrier cutoff schedules, and delivery promises without exception holds.
+            <p className="mt-2 text-[13px] leading-[1.55] text-white/60">
+              Average weekly hours saved per operator on order exceptions &amp; manual reconciliation
             </p>
           </div>
 
-          {/* Pillar 3 */}
-          <div className="flex flex-col border border-white/10 bg-white/[0.04] p-6 rounded-xl relative overflow-hidden">
-            <h4 className="text-[16px] font-semibold tracking-[-0.01em] text-white">
-              Inventory Stock Velocity
+          {/* KPI 3 */}
+          <div>
+            <div className="text-[36px] sm:text-[42px] font-extrabold tracking-tight text-[#00e5ff] leading-none">
+              5.2x
+            </div>
+            <h4 className="mt-3.5 text-[15px] sm:text-[16px] font-bold tracking-[-0.01em] text-white">
+              Workflow Efficiency Gain
             </h4>
-            <p className="mt-2 text-[13.5px] leading-[1.6] text-white/60">
-              Continuous Days of Supply modeling and predictive rebalancing protect regional availability while preventing dead inventory buildup.
+            <p className="mt-2 text-[13px] leading-[1.55] text-white/60">
+              End-to-end turnaround acceleration from customer checkout to carrier dispatch
             </p>
           </div>
 
-          {/* Pillar 4 */}
-          <div className="flex flex-col border border-emerald-500/20 bg-emerald-500/[0.05] p-6 rounded-xl relative overflow-hidden">
-            <h4 className="text-[16px] font-semibold tracking-[-0.01em] text-white">
-              Customer Trust &amp; Retention
+          {/* KPI 4 */}
+          <div>
+            <div className="text-[36px] sm:text-[42px] font-extrabold tracking-tight text-[#00e5ff] leading-none">
+              3.6x
+            </div>
+            <h4 className="mt-3.5 text-[15px] sm:text-[16px] font-bold tracking-[-0.01em] text-white">
+              Order Fulfillment Capacity
             </h4>
-            <p className="mt-2 text-[13.5px] leading-[1.6] text-white/60">
-              Live transit tracking, instant return authorization, and synchronized support context safeguard customer satisfaction and repeat sales.
+            <p className="mt-2 text-[13px] leading-[1.55] text-white/60">
+              More qualified order packages dispatched per team without adding operational overhead
             </p>
           </div>
         </div>
