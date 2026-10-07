@@ -6,9 +6,23 @@ import { PRODUCT } from "@/lib/product";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden border-b border-[var(--line)] bg-[var(--paper)]">
+    <section id="top" className="relative isolate overflow-hidden border-b border-[var(--line)] bg-[var(--paper)]">
+      {/* Hero Background: E-commerce operations team with orders & parcels */}
+      <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none select-none">
+        <Image
+          src="/assets/hero-ecommerce-ops.jpg"
+          alt="E-commerce operations team managing orders and parcel shipments"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-25 sm:opacity-30"
+        />
+        {/* Soft overlay ensuring high-contrast readability across all devices */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/75 via-white/88 to-[var(--paper)]" />
+      </div>
+
       {/* Decorative background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-blue-500/10 via-sky-400/5 to-transparent blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-blue-500/15 via-sky-400/8 to-transparent blur-3xl pointer-events-none -z-10" />
 
       <div className="mx-auto max-w-[1320px] px-5 pt-16 pb-20 sm:px-8 sm:pt-24 sm:pb-28 relative">
         <div className="flex flex-col items-center text-center max-w-[920px] mx-auto">

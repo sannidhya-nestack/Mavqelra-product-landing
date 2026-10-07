@@ -277,11 +277,11 @@ export default function WalkthroughCalendar() {
           {/* ================= LEFT COLUMN ================= */}
           <div className="relative isolate flex min-h-[380px] flex-col justify-end overflow-hidden bg-[var(--navy)] p-6 text-white sm:min-h-[420px] sm:p-10">
             <Image
-              src="/assets/warehouse-floor.jpg"
-              alt="High-density e-commerce fulfillment and distribution facility"
+              src="/assets/walkthrough-operations.jpg"
+              alt="E-commerce fulfillment operations team coordinating warehouse workflows"
               fill
               sizes="(min-width: 1024px) 520px, 100vw"
-              className="-z-10 object-cover object-[72%_center]"
+              className="-z-10 object-cover object-[50%_center]"
               priority
             />
             <div
