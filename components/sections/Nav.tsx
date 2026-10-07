@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { PRODUCT, NAME_PARTS } from "@/lib/product";
+import { PRODUCT } from "@/lib/product";
 
 const links = [
   { href: "#platform", label: "Platform" },
@@ -49,12 +49,10 @@ export default function Nav() {
     <header className="sticky top-0 z-50">
       <div className="border-b border-[var(--line)] bg-[color:var(--paper)]/95 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-[1320px] items-center justify-between px-5 sm:px-8">
-          <Link href="#top" className="flex items-center gap-2 group">
-            <span className="font-display text-[20px] font-bold tracking-tight text-[var(--ink)]">
-              {NAME_PARTS.base}
-            </span>
-            <span className="rounded-md bg-blue-600 px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-white">
-              AI
+          {/* Logo */}
+          <Link href="#top" className="flex items-center" onClick={() => setIsOpen(false)}>
+            <span className="whitespace-nowrap font-display text-[18px] sm:text-[19px] font-bold uppercase leading-none tracking-[0.03em] text-[var(--ink)]">
+              {PRODUCT.name}
             </span>
           </Link>
 
@@ -73,9 +71,9 @@ export default function Nav() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="#walkthrough"
-              className="inline-flex h-9 items-center justify-center rounded-lg bg-blue-600 px-4 text-[13.5px] font-semibold text-white shadow-sm transition hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              className="inline-flex h-[38px] items-center justify-center rounded-full bg-slate-950 px-5 text-[13.5px] font-medium text-white shadow-sm transition hover:bg-slate-800"
             >
-              Book Demo ↗
+              Book a demo
             </a>
           </div>
 
@@ -109,9 +107,9 @@ export default function Nav() {
             <a
               href="#walkthrough"
               onClick={() => setIsOpen(false)}
-              className="flex h-11 w-full items-center justify-center rounded-lg bg-blue-600 font-semibold text-white"
+              className="flex h-11 w-full items-center justify-center rounded-full bg-slate-950 font-medium text-white shadow-sm transition hover:bg-slate-800"
             >
-              Book Demo ↗
+              Book a demo
             </a>
           </div>
         </div>

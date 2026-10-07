@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { PRODUCT, NAME_PARTS } from "@/lib/product";
+import { PRODUCT } from "@/lib/product";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -16,12 +16,9 @@ export default function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] lg:gap-8">
           {/* Brand & Tagline */}
           <div className="max-w-[320px]">
-            <Link href="#top" className="flex items-center gap-2">
-              <span className="font-display text-[22px] font-bold tracking-tight text-[var(--ink)]">
-                {NAME_PARTS.base}
-              </span>
-              <span className="rounded-md bg-blue-600 px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-white">
-                AI
+            <Link href="#top" className="flex items-center">
+              <span className="whitespace-nowrap font-display text-[20px] font-bold uppercase tracking-[0.03em] text-[var(--ink)]">
+                {PRODUCT.name}
               </span>
             </Link>
             <p className="mt-4 text-[14px] leading-relaxed text-[var(--ink-soft)]">
