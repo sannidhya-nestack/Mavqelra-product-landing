@@ -241,7 +241,8 @@ export default function Figure({
                       onClick={(e) => e.stopPropagation()}
                       style={{
                         position: "absolute",
-                        left: `${labelX * 100}%`,
+                        left: labelX > 0.65 ? undefined : `${labelX * 100}%`,
+                        right: labelX > 0.65 ? "1rem" : undefined,
                         top: `calc(${labelY * 100}% + 1.25rem)`,
                         transform: labelSide === "left" ? "translateX(-75%)" : "translateX(0)",
                         zIndex: 40,

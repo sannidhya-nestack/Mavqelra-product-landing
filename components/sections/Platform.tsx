@@ -6,8 +6,8 @@ const pins: CalloutPin[] = [
   {
     id: "p1-pulse",
     label: "Operations Pulse & WIP",
-    anchor: { x: 0.45, y: 0.22 },
-    label_at: { x: 0.55, y: 0.18 },
+    anchor: { x: 0.44, y: 0.22 },
+    label_at: { x: 0.54, y: 0.22 },
     side: "right",
     description:
       "Continuous telemetry across Catalog, Inventory, Orders, Fulfillment, Returns, and Service. Surfaces work-in-progress volumes, active exceptions, and SLA health.",
@@ -15,20 +15,20 @@ const pins: CalloutPin[] = [
   {
     id: "p2-kpis",
     label: "Live Financial & Margin Metrics",
-    anchor: { x: 0.28, y: 0.42 },
-    label_at: { x: 0.18, y: 0.42 },
-    side: "left",
+    anchor: { x: 0.25, y: 0.45 },
+    label_at: { x: 0.36, y: 0.45 },
+    side: "right",
     description:
-      "Tracks real-time Net Sales ($4.82M), Contribution Margin (31.4%), and GMROI across all active storefronts and regional fulfillment centers.",
+      "Tracks real-time Net Sales ($24,580), Accepted Orders (428), and margin performance across all active storefronts and retail channels.",
   },
   {
     id: "p3-ai-priorities",
     label: "AI Priority & Intervention Queue",
-    anchor: { x: 0.72, y: 0.75 },
-    label_at: { x: 0.58, y: 0.75 },
-    side: "left",
+    anchor: { x: 0.66, y: 0.75 },
+    label_at: { x: 0.75, y: 0.75 },
+    side: "right",
     description:
-      "Surfaces high-leverage exceptions: 17 high-risk stockout SKUs, 41 orders approaching delivery SLA deadlines, and sizing return spikes requiring catalog updates.",
+      "Surfaces high-leverage exceptions: inventory stockout risks, SKU velocity anomalies, delivery SLA countdowns, and returns spikes requiring catalog updates.",
   },
 ];
 
