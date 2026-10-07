@@ -19,7 +19,7 @@ const pins: CalloutPin[] = [
     label_at: { x: 0.36, y: 0.45 },
     side: "right",
     description:
-      "Tracks real-time Net Sales ($24,580), Accepted Orders (428), and margin performance across all active storefronts and retail channels.",
+      "Tracks real-time Net Sales, Accepted Orders, and margin performance across all active storefronts and retail channels.",
   },
   {
     id: "p3-ai-priorities",
@@ -76,73 +76,73 @@ export default function Platform() {
         <div className="mx-auto mt-10 max-w-[1120px] grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {/* Metric 1 */}
           <div className="flex flex-col border border-white/10 bg-white/[0.04] p-6 rounded-xl relative overflow-hidden">
-            <div className="flex items-start justify-between gap-3 border-b border-white/10 pb-5">
-              <span className="inline-flex items-center rounded-full border border-sky-400/30 bg-sky-500/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-sky-300">
-                Weekly Sales
+            <div className="flex items-center justify-between border-b border-white/10 pb-4">
+              <span className="inline-flex items-center rounded-full border border-sky-400/30 bg-sky-500/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-sky-300">
+                Reconciliation
               </span>
-              <span className="font-display tnum text-[24px] font-bold text-white">
-                $24,580
+              <span className="text-[11.5px] font-medium text-white/50 tracking-wide uppercase">
+                Active Sync
               </span>
             </div>
             <h4 className="mt-5 text-[15px] font-semibold tracking-[-0.01em] text-white">
-              Total Sales Volume (+12%)
+              Multi-Channel Revenue Flow
             </h4>
             <p className="mt-2 text-[13.5px] leading-[1.55] text-white/60">
-              Net revenue reconciled across web store, mobile channels, and retail points of sale over the trailing 7 days.
+              Automated settlement across web store checkouts, social channels, and payment gateways with instant general ledger posting.
             </p>
           </div>
 
           {/* Metric 2 */}
           <div className="flex flex-col border border-emerald-500/20 bg-emerald-500/[0.05] p-6 rounded-xl relative overflow-hidden">
-            <div className="flex items-start justify-between gap-3 border-b border-emerald-500/20 pb-5">
-              <span className="inline-flex items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-emerald-300">
+            <div className="flex items-center justify-between border-b border-emerald-500/20 pb-4">
+              <span className="inline-flex items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-300">
                 Order Flow
               </span>
-              <span className="font-display tnum text-[24px] font-bold text-white">
-                428 Orders
+              <span className="text-[11.5px] font-medium text-emerald-300/60 tracking-wide uppercase">
+                Continuous
               </span>
             </div>
             <h4 className="mt-5 text-[15px] font-semibold tracking-[-0.01em] text-white">
-              Accepted Orders (+18%)
+              Autonomous Order Routing
             </h4>
             <p className="mt-2 text-[13.5px] leading-[1.55] text-white/60">
-              Live status tracking: 128 Processing, 96 Packed, 102 Shipped, 82 Delivered, with minimal exception holds.
+              Intelligent node selection balances multi-warehouse inventory, carrier cutoff schedules, and delivery promises without exception holds.
             </p>
           </div>
 
           {/* Metric 3 */}
           <div className="flex flex-col border border-white/10 bg-white/[0.04] p-6 rounded-xl relative overflow-hidden">
-            <div className="flex items-start justify-between gap-3 border-b border-white/10 pb-5">
-              <span className="inline-flex items-center rounded-full border border-sky-400/30 bg-sky-500/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-sky-300">
+            <div className="flex items-center justify-between border-b border-white/10 pb-4">
+              <span className="inline-flex items-center rounded-full border border-sky-400/30 bg-sky-500/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-sky-300">
                 Merchandise
               </span>
-              <span className="font-display tnum text-[24px] font-bold text-white">
-                1,264 Units
+              <span className="text-[11.5px] font-medium text-white/50 tracking-wide uppercase">
+                Optimized
               </span>
             </div>
             <h4 className="mt-5 text-[15px] font-semibold tracking-[-0.01em] text-white">
-              Units Sold (+15%)
+              Inventory Stock Velocity
             </h4>
             <p className="mt-2 text-[13.5px] leading-[1.55] text-white/60">
-              Product velocity led by Footwear (38%), Apparel (28%), Bags &amp; Luggage (16%), and Accessories (10%).
+              Continuous Days of Supply modeling and predictive rebalancing protect regional availability while preventing dead inventory buildup.
             </p>
           </div>
 
           {/* Metric 4 */}
           <div className="flex flex-col border border-emerald-500/20 bg-emerald-500/[0.05] p-6 rounded-xl relative overflow-hidden">
-            <div className="flex items-start justify-between gap-3 border-b border-emerald-500/20 pb-5">
-              <span className="inline-flex items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-emerald-300">
+            <div className="flex items-center justify-between border-b border-emerald-500/20 pb-4">
+              <span className="inline-flex items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-300">
                 Audience
               </span>
-              <span className="font-display tnum text-[24px] font-bold text-white">
-                892 Active
+              <span className="text-[11.5px] font-medium text-emerald-300/60 tracking-wide uppercase">
+                Verified
               </span>
             </div>
             <h4 className="mt-5 text-[15px] font-semibold tracking-[-0.01em] text-white">
-              Active Customers (+9%)
+              Customer Trust &amp; Retention
             </h4>
             <p className="mt-2 text-[13.5px] leading-[1.55] text-white/60">
-              Unique transacting accounts with verified consent profiles, zero chargeback flags, and positive purchase affinity.
+              Live transit tracking, instant return authorization, and synchronized support context safeguard customer satisfaction and repeat sales.
             </p>
           </div>
         </div>
