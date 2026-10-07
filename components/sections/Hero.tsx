@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowUpRight, CheckCircle2, Sparkles } from "lucide-react";
+import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { PRODUCT } from "@/lib/product";
 
 export default function Hero() {
@@ -26,16 +26,8 @@ export default function Hero() {
 
       <div className="mx-auto max-w-[1320px] px-5 pt-16 pb-20 sm:px-8 sm:pt-24 sm:pb-28 relative">
         <div className="flex flex-col items-center text-center max-w-[920px] mx-auto">
-          {/* Eyebrow badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-950/70 px-3.5 py-1.5 text-[12.5px] font-semibold text-blue-300 backdrop-blur-md">
-            <Sparkles className="h-3.5 w-3.5 text-blue-400" />
-            <span>Retail &amp; E-Commerce Operations OS</span>
-            <span className="h-1 w-1 rounded-full bg-blue-400" />
-            <span className="text-white font-bold">Closed-Loop Intelligence</span>
-          </div>
-
           {/* Main Headline */}
-          <h1 className="h-hero mt-6 text-[clamp(2.4rem,5.2vw,4.4rem)] font-extrabold tracking-[-0.03em] text-white leading-[1.08]">
+          <h1 className="h-hero text-[clamp(2.4rem,5.2vw,4.4rem)] font-extrabold tracking-[-0.03em] text-white leading-[1.08]">
             E-Commerce Is Not a Storefront. <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-blue-200">
               It&apos;s a Continuous Operational System.
