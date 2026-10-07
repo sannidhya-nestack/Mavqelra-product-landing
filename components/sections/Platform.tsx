@@ -78,17 +78,17 @@ export default function Platform() {
           <div className="flex flex-col border border-white/10 bg-white/[0.04] p-6 rounded-xl relative overflow-hidden">
             <div className="flex items-start justify-between gap-3 border-b border-white/10 pb-5">
               <span className="inline-flex items-center rounded-full border border-sky-400/30 bg-sky-500/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-sky-300">
-                Revenue
+                Weekly Sales
               </span>
               <span className="font-display tnum text-[24px] font-bold text-white">
-                $4.82M
+                $24,580
               </span>
             </div>
             <h4 className="mt-5 text-[15px] font-semibold tracking-[-0.01em] text-white">
-              Net Order Revenue
+              Total Sales Volume (+12%)
             </h4>
             <p className="mt-2 text-[13.5px] leading-[1.55] text-white/60">
-              Gross sales minus discounts, promotional allowances, and returns reconciled in real time across all storefront channels.
+              Net revenue reconciled across web store, mobile channels, and retail points of sale over the trailing 7 days.
             </p>
           </div>
 
@@ -96,17 +96,17 @@ export default function Platform() {
           <div className="flex flex-col border border-emerald-500/20 bg-emerald-500/[0.05] p-6 rounded-xl relative overflow-hidden">
             <div className="flex items-start justify-between gap-3 border-b border-emerald-500/20 pb-5">
               <span className="inline-flex items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-emerald-300">
-                Profitability
+                Order Flow
               </span>
               <span className="font-display tnum text-[24px] font-bold text-white">
-                31.4%
+                428 Orders
               </span>
             </div>
             <h4 className="mt-5 text-[15px] font-semibold tracking-[-0.01em] text-white">
-              Contribution Margin
+              Accepted Orders (+18%)
             </h4>
             <p className="mt-2 text-[13.5px] leading-[1.55] text-white/60">
-              Continuously balances customer acquisition cost, landed COGS, freight costs, and reverse logistics handling fees.
+              Live status tracking: 128 Processing, 96 Packed, 102 Shipped, 82 Delivered, with minimal exception holds.
             </p>
           </div>
 
@@ -114,17 +114,17 @@ export default function Platform() {
           <div className="flex flex-col border border-white/10 bg-white/[0.04] p-6 rounded-xl relative overflow-hidden">
             <div className="flex items-start justify-between gap-3 border-b border-white/10 pb-5">
               <span className="inline-flex items-center rounded-full border border-sky-400/30 bg-sky-500/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-sky-300">
-                Inventory
+                Merchandise
               </span>
               <span className="font-display tnum text-[24px] font-bold text-white">
-                86 / 100
+                1,264 Units
               </span>
             </div>
             <h4 className="mt-5 text-[15px] font-semibold tracking-[-0.01em] text-white">
-              Inventory Health Index
+              Units Sold (+15%)
             </h4>
             <p className="mt-2 text-[13.5px] leading-[1.55] text-white/60">
-              Composite score measuring Days of Supply (DOS), stockout probability, and excess stock depreciation risk across hubs.
+              Product velocity led by Footwear (38%), Apparel (28%), Bags &amp; Luggage (16%), and Accessories (10%).
             </p>
           </div>
 
@@ -132,17 +132,17 @@ export default function Platform() {
           <div className="flex flex-col border border-emerald-500/20 bg-emerald-500/[0.05] p-6 rounded-xl relative overflow-hidden">
             <div className="flex items-start justify-between gap-3 border-b border-emerald-500/20 pb-5">
               <span className="inline-flex items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-emerald-300">
-                Execution
+                Audience
               </span>
               <span className="font-display tnum text-[24px] font-bold text-white">
-                96.2%
+                892 Active
               </span>
             </div>
             <h4 className="mt-5 text-[15px] font-semibold tracking-[-0.01em] text-white">
-              On-Time Delivery SLA
+              Active Customers (+9%)
             </h4>
             <p className="mt-2 text-[13.5px] leading-[1.55] text-white/60">
-              Percentage of shipments delivered on or before the advertised customer promise date under FTC 30-day compliance guidelines.
+              Unique transacting accounts with verified consent profiles, zero chargeback flags, and positive purchase affinity.
             </p>
           </div>
         </div>

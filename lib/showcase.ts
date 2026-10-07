@@ -9,33 +9,23 @@ export type ProductItem = {
 export const COMPLIANCE: ComplianceItem[] = [
   {
     code: "PCI DSS v4.0.1",
-    name: "Payment Card Industry Data Security Standard (SAQ A & Script Defense)",
-    note: "Mavqelra AI mandates tokenized payment architectures, never stores raw PAN data, and continuously audits client-side payment script integrity to prevent e-commerce digital skimming attacks.",
+    name: "Payment Card Industry Data Security Standard (Tokenized Payment Flows)",
+    note: "Mavqelra AI delegates card handling to certified gateways (e.g. Stripe, Adyen) via secure tokens, ensuring your servers never store raw credit card numbers or sensitive CVV data.",
   },
   {
-    code: "GDPR (EU 2016/679)",
-    name: "General Data Protection Regulation — Consumer Profiling & Consent Separation",
-    note: "Maintains auditable consent state records, purpose metadata, automated data minimization, and automated right-to-be-forgotten deletion workflows across all customer profile tables.",
+    code: "GDPR & CCPA / CPRA",
+    name: "Consumer Data Privacy & Automated Right-to-Delete Workflows",
+    note: "Separates customer marketing consent from operational order tracking, and provides one-click data export and profile anonymization to fulfill consumer privacy requests simply.",
   },
   {
-    code: "CCPA / CPRA",
-    name: "California Consumer Privacy Act & Privacy Rights Act Compliance",
-    note: "Enforces consumer opt-out preferences, automated limit-use flags on sensitive personal data, and collection notices before customer discovery tracking and recommendation scoring.",
-  },
-  {
-    code: "FTC Mail Order Rule",
-    name: "Federal Trade Commission 30-Day Merchandise & Shipping Delay Rule",
-    note: "Operates an autonomous tracking clock on promised shipment windows, surfacing mandatory buyer delay consent prompts and automated refund protocols before regulatory breach.",
+    code: "FTC 30-Day Mail Order Rule",
+    name: "Federal Trade Commission Shipping Delay & Buyer Consent Protocols",
+    note: "Monitors promised delivery windows with automated fulfillment countdowns, surfacing timely delay consent prompts or refund options before regulatory deadlines.",
   },
   {
     code: "CAN-SPAM Act",
-    name: "Controlling the Assault of Non-Purchased Pornography & Marketing Act",
-    note: "Strictly decouples operational transactional order and tracking notifications from commercial promotional marketing campaigns, maintaining instantaneous opt-out registries.",
-  },
-  {
-    code: "INFORM Consumers Act",
-    name: "Integrity, Notification, and Fairness in Online Retail Marketplaces for Consumers",
-    note: "For multi-seller and marketplace deployments, automates identity, bank account, and tax verification for high-volume third-party sellers with suspicious activity reporting.",
+    name: "Commercial Communications & Transactional Notification Decoupling",
+    note: "Guarantees that operational transactional updates (order confirmations, carrier tracking, return receipts) remain strictly separate from commercial marketing lists.",
   },
 ];
 
