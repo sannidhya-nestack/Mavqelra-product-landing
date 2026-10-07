@@ -3,7 +3,7 @@
    never a hard-coded product name. */
 
 export const PRODUCT = {
-  insubId: "insub_RET001",
+  insubId: "insub_RET099",
   name: "Mavqelra AI",
   tagline: "Autonomous Commerce Operations Platform connecting product intake, merchandising, inventory, orders, fulfillment, returns, and customer service",
   industry: "Retail & E-Commerce",
