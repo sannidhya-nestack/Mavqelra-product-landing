@@ -61,19 +61,7 @@ export default function Platform() {
         </div>
 
         {/* ── Operational Impact Rail (KPIs) ── */}
-        <div className="border-t border-white/12 pt-14 mt-20 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-          <div>
-            <span className="eyebrow on-dark">Operational Telemetry</span>
-            <h3 className="h-section mt-2 text-[clamp(1.5rem,2.8vw,2.2rem)] text-white">
-              Engineered for Working Capital &amp; Margin Velocity.
-            </h3>
-          </div>
-          <p className="max-w-[46ch] text-[14.5px] leading-relaxed text-white/70">
-            Real enterprise benchmark metrics measured across active storefronts, multi-node fulfillment routing, and automated exception queues.
-          </p>
-        </div>
-
-        <div className="mt-12 border-t border-white/10 pt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 border-t border-white/12 pt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* KPI 1 */}
           <div>
             <div className="text-[36px] sm:text-[42px] font-extrabold tracking-tight text-[#00e5ff] leading-none">

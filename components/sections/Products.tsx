@@ -1,5 +1,4 @@
 import { PRODUCTS } from "@/lib/showcase";
-import { ArrowUpRight, Sparkles, Layers } from "lucide-react";
 import { PRODUCT } from "@/lib/product";
 
 export default function Products() {
@@ -9,7 +8,7 @@ export default function Products() {
     <section id="products" className="border-b border-[var(--line)] bg-[var(--paper)]">
       <div className="mx-auto max-w-[1320px] px-5 py-20 sm:px-8 sm:py-28">
         <div className="max-w-[56ch]">
-          <span className="eyebrow">Enterprise Extensions &amp; Add-Ons</span>
+          <span className="eyebrow">Hardware</span>
           <h2 className="h-section mt-5 text-[clamp(1.9rem,3.6vw,3rem)] text-[var(--ink)]">
             Tailor Mavqelra to Your Channel Complexity.
           </h2>
@@ -25,11 +24,7 @@ export default function Products() {
               className="flex flex-col justify-between rounded-2xl border border-[var(--line)] bg-white p-7 shadow-xs transition hover:border-blue-500/30 hover:shadow-md"
             >
               <div>
-                <div className="inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-2.5 py-1 text-[11px] font-bold text-blue-700">
-                  <Sparkles className="h-3.5 w-3.5" />
-                  <span>Modular Extension</span>
-                </div>
-                <h3 className="mt-4 text-[18px] font-bold text-[var(--ink)]">
+                <h3 className="text-[18px] font-bold text-[var(--ink)]">
                   {prod.name}
                 </h3>
                 <p className="mt-3 text-[14px] leading-[1.6] text-[var(--ink-soft)]">

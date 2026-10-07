@@ -1,4 +1,4 @@
-import { ShieldCheck, Scale, Info } from "lucide-react";
+import { ShieldCheck, Info } from "lucide-react";
 import { COMPLIANCE } from "@/lib/showcase";
 import { PRODUCT } from "@/lib/product";
 
@@ -49,29 +49,6 @@ export default function Compliance() {
           <p className="text-[13.5px] sm:text-[14px] leading-[1.6] text-amber-900/90 font-medium">
             These are standards the platform is built to support inside your workflows — obligations that fall on you as the licensee. They are not certifications held by us, and support in the product is not a substitute for your own counsel or compliance officer.
           </p>
-        </div>
-
-        {/* Security Architecture Callout */}
-        <div className="mt-10 rounded-2xl border border-[var(--line)] bg-white p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div className="flex items-start gap-4">
-            <div className="rounded-xl bg-blue-50 p-3 text-blue-700 shrink-0 border border-blue-100">
-              <Scale className="h-6 w-6" />
-            </div>
-            <div>
-              <h4 className="text-[16px] font-bold text-[var(--ink)]">
-                Pragmatic, Low-Overhead Implementation
-              </h4>
-              <p className="mt-1 text-[14px] text-[var(--ink-soft)] max-w-[62ch]">
-                By delegating raw card data to gateway tokens and automating customer privacy requests via clean REST endpoints, {PRODUCT.name} keeps your stack lightweight, compliant, and auditable.
-              </p>
-            </div>
-          </div>
-          <a
-            href="#walkthrough"
-            className="inline-flex h-10 items-center justify-center rounded-xl border border-[var(--line-2)] bg-[var(--paper-2)] px-5 text-[13.5px] font-semibold text-[var(--ink)] hover:bg-black/[0.04] transition shrink-0"
-          >
-            Review Security Architecture ↗
-          </a>
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { ArrowRight, RefreshCw, Layers, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, Layers, ShieldCheck, Zap } from "lucide-react";
 import { PRODUCT } from "@/lib/product";
 
 const steps = [
@@ -85,29 +85,6 @@ export default function HowItWorks() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Closed Loop Callout */}
-        <div className="mt-12 rounded-2xl border border-blue-500/20 bg-blue-50/50 p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div className="flex items-start gap-4">
-            <div className="rounded-xl bg-blue-600 p-3 text-white shrink-0">
-              <RefreshCw className="h-6 w-6" />
-            </div>
-            <div>
-              <h4 className="text-[16px] font-bold text-blue-950">
-                The Upstream Feedback Principle
-              </h4>
-              <p className="mt-1 text-[14px] leading-[1.55] text-blue-900/80 max-w-[65ch]">
-                When return rates for a shoe spike by 2.5× baseline due to &quot;Size too small&quot;, {PRODUCT.name} does not merely process refunds — it automatically alerts the catalog team to adjust the supplier measurement guide, immediately curbing downstream return losses.
-              </p>
-            </div>
-          </div>
-          <a
-            href="#walkthrough"
-            className="inline-flex h-10 items-center justify-center rounded-xl bg-blue-600 px-5 text-[13.5px] font-semibold text-white shrink-0 hover:bg-blue-700 transition"
-          >
-            See Live Loop ↗
-          </a>
         </div>
       </div>
     </section>

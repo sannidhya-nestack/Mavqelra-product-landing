@@ -1,4 +1,4 @@
-import { Brain, Cpu, Calculator, ShieldCheck, BarChart3, GitFork, ArrowUpRight } from "lucide-react";
+import { Brain, Cpu, ShieldCheck, BarChart3, GitFork, ArrowUpRight } from "lucide-react";
 import { PRODUCT } from "@/lib/product";
 
 const aiCapabilities = [
@@ -90,36 +90,6 @@ export default function Intelligence() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Operational Mathematics Callout Banner */}
-        <div className="mt-12 rounded-2xl border border-[var(--line)] bg-[var(--paper-2)] p-7 sm:p-9">
-          <div className="flex items-center gap-2.5 text-[12px] font-bold uppercase tracking-wider text-blue-700 mb-4">
-            <Calculator className="h-4 w-4" />
-            <span>Built-In Operational Calculation Engines</span>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="rounded-xl border border-[var(--line)] bg-white p-5">
-              <div className="text-[12px] font-bold text-[var(--ink-mute)] uppercase">Available-to-Sell</div>
-              <div className="font-mono text-[13px] text-blue-700 font-semibold mt-1">ATS = On Hand - Reserved - Safety</div>
-              <p className="text-[12.5px] text-[var(--ink-soft)] mt-2">Guarantees zero overselling across storefronts during flash promotions.</p>
-            </div>
-            <div className="rounded-xl border border-[var(--line)] bg-white p-5">
-              <div className="text-[12px] font-bold text-[var(--ink-mute)] uppercase">Order Routing Score</div>
-              <div className="font-mono text-[13px] text-blue-700 font-semibold mt-1">0.3(Avail) + 0.25(SLA) + 0.2(Cost)...</div>
-              <p className="text-[12.5px] text-[var(--ink-soft)] mt-2">Selects closest fulfillment node while eliminating split-shipment penalties.</p>
-            </div>
-            <div className="rounded-xl border border-[var(--line)] bg-white p-5">
-              <div className="text-[12px] font-bold text-[var(--ink-mute)] uppercase">Days of Supply (DOS)</div>
-              <div className="font-mono text-[13px] text-blue-700 font-semibold mt-1">DOS = Available / Avg Daily Demand</div>
-              <p className="text-[12.5px] text-[var(--ink-soft)] mt-2">Continuously identifies stockout risks and excess capital stagnation.</p>
-            </div>
-            <div className="rounded-xl border border-[var(--line)] bg-white p-5">
-              <div className="text-[12px] font-bold text-[var(--ink-mute)] uppercase">Gross Margin ROI</div>
-              <div className="font-mono text-[13px] text-blue-700 font-semibold mt-1">GMROI = Gross Margin / Avg Inv Cost</div>
-              <p className="text-[12.5px] text-[var(--ink-soft)] mt-2">Measures profitability generated for every dollar invested in warehouse stock.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
