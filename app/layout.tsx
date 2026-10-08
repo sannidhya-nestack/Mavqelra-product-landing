@@ -11,6 +11,8 @@ const display = Plus_Jakarta_Sans({
 const body = Instrument_Sans({ variable: "--font-body", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mavqelra.nestack.ai"),
+  alternates: { canonical: "/" },
   title: "Mavqelra AI — Autonomous Commerce Operations Platform",
   description:
     "Mavqelra AI is the connected operations platform connecting product intake, merchandising, inventory, orders, fulfillment, returns, and customer service into one continuous closed loop.",

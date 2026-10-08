@@ -21,6 +21,7 @@ import {
   type Slot,
 } from "@/lib/nestack";
 import { PRODUCT } from "@/lib/product";
+import { MODULES } from "@/lib/modules";
 
 const DAY_NAMES = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 const STEP_LABELS = ["Pick a time", "Your details", "What to see"];
@@ -91,7 +92,7 @@ export default function WalkthroughCalendar() {
 
   // 1. Fetch modules for this product from the platform
   useEffect(() => {
-    getModules(PRODUCT.insubId).then(setModules);
+    getModules(PRODUCT.insubId).then((fetched) => setModules(fetched.length ? fetched : MODULES.map(module => ({ pageNo: module.page, label: module.navTitle }))));
   }, []);
 
   // 2. Fetch availability slots and track draft status
@@ -432,6 +433,7 @@ export default function WalkthroughCalendar() {
                     </div>
                   ))}
 
+                  <div aria-busy={availableSlots === null}>
                   {availableSlots === null ? (
                     Array.from({ length: 35 }).map((_, r) => (
                       <div
@@ -480,6 +482,7 @@ export default function WalkthroughCalendar() {
                       })}
                     </>
                   )}
+                  </div>
                 </div>
 
                 {/* Day Slots */}
