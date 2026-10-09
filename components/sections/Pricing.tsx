@@ -50,6 +50,12 @@ export default async function Pricing() {
             <p className="mt-5 max-w-[42ch] text-[14.5px] leading-[1.6] text-[var(--ink-soft)]">
               Complete access to the autonomous operations engine — including automated document ingestion, multi-node inventory forecasting, dynamic order routing, reverse logistics condition grading, and omnichannel service triage.
             </p>
+            <div className="mt-5 rounded-lg border border-[var(--line-2)] bg-[var(--paper-2)] p-3.5 text-left">
+              <p className="text-[12.5px] leading-[1.55] text-[var(--ink-soft)]">
+                <strong className="font-semibold text-[var(--ink)]">Note:</strong>{" "}
+                AI API usage is charged separately. Clients must recharge their AI credit balance based on their usage.
+              </p>
+            </div>
             <Link
               href="#walkthrough"
               className="mt-8 inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-xl bg-blue-600 px-7 text-[14px] font-semibold text-white transition hover:bg-blue-700 shadow-sm"
